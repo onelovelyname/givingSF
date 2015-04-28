@@ -1,0 +1,12 @@
+<div ng-controller='ImpactController'> 
+	<p>Would you like to input non-profit metrics?</p>
+	<form ng-submit='addImpact()'>
+		<input type='text' ng-model='org.name' placeholder="Enter organization name"></input>
+		<input type='text' ng-model='impact.number' placeholder="Enter organization impact (number)"></input>
+		<input type='text' ng-model='impact.text' placeholder="Enter organization impact (text)"></input>
+		<!--user chooses icon-->
+		<button>submit</button>		
+	</form>
+	<h3>{{ impact.number }}</h3>
+	<h3>{{ impact.text }}</h3>
+</div>
